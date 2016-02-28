@@ -1,0 +1,6 @@
+LIBRARY LIBBSU
+EXPORTS
+	sum @1
+	whoami @2
+	timestamp @3
+	object @4
