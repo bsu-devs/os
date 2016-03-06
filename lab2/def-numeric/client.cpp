@@ -14,21 +14,21 @@ int main () {
 	if (!hLib) throw GetLastError();
 
 	// Test for exported variable timestamp
-	time_t timestamp = (time_t) GetProcAdress(hLib, MAKEINTRESOURCE(TIMESTAMP_NUM));
+	time_t timestamp = (time_t) GetProcAddress(hLib, MAKEINTRESOURCE(TIMESTAMP_NUM));
 	cout << "Timestamp: " << timestamp << "\n\n";
 	
 	// Test for exported function sum
 	int (*sum)(int, int);
-	sum = (int (*)(int, int)) GetProcAdress(hLib, MAKEINTRESOURCE(SUM_NUM));
+	sum = (int (*)(int, int)) GetProcAddress(hLib, MAKEINTRESOURCE(SUM_NUM));
 	cout << "2 + 5 = " << sum(2, 5) << "\n\n";
 
 	// Test for exported function whoami
 	void (*whoami)();
-	whoami = (void (*)()) GetProcAdress(hLib, MAKEINTRESOURCE(WHOAMI_NUM));
+	whoami = (void (*)()) GetProcAddress(hLib, MAKEINTRESOURCE(WHOAMI_NUM));
 	cout << "WHOAMI: " << whoami() << "\n\n";
 
 	// Test for exported class MyObject
-	MyObject* object = (*MyObject) GetProcAdress(hLib, MAKEINTRESOURCE(OBJECT_NUM));
+	MyObject* object = (*MyObject) GetProcAddress(hLib, MAKEINTRESOURCE(OBJECT_NUM));
 	cout << "Initial name: " << object->getName() << "\n";
 	object->setName("James, Ira, Kun");
 	cout << "New name: " << object->getName() << "\n\n";
