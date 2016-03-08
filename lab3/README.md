@@ -4,11 +4,6 @@
 
 **Задача**: Экспорт/импорт ресурсов
 
-**Результат**: Решение, которое включает проекты:  
-1.&nbsp;DLL и клиент для Задачи 1;  
-2.&nbsp;StrTableContainer и ClientStrTable для Задачи 2;  
-3.&nbsp;DLL и клиент для Домашнего задания.  
-
 **Описание**:
 
 1.&nbsp;Создать DLL-модуль (Empty Project), который экспортирует только ресурс String Table (три строки).  
@@ -32,7 +27,7 @@ API-функция LoadString(…) для извлечения строки из
 
 DLL.Properties->Configuration Properties->Linker ->Debugging->Generate Map File.  
 
->**map-файл**
+>**map-файл**  
 A mapfile is a text file that contains the following information about the program being linked: 
 The module name, which is the base name of the file
 The timestamp from the program file header (not from the file system)  
