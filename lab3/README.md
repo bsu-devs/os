@@ -9,6 +9,7 @@
 1.&nbsp;Создать DLL-модуль (Empty Project), который экспортирует только ресурс String Table (три строки).  
 
 При создании DLL установить опцию компоновщика:
+[Подробное руководство как скомпилить такую длльку](https://msdn.microsoft.com/en-us/library/aa293204(v=vs.60).aspx)
 /NOENTRY  
 >This option is required for creating a resource-only DLL.
 Use this option to prevent LINK from linking a reference to _main into the DLL.  
