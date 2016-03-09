@@ -11,8 +11,8 @@ public:
 using namespace std;
 
 int main() {
-	//HMODULE hLib = LoadLibraryA("../Debug/extern.dll");
-	HMODULE hLib = LoadLibraryA("../Debug/pragma_linker.dll");
+	HMODULE hLib = LoadLibraryA("../Debug/extern.dll");
+	//HMODULE hLib = LoadLibraryA("../Debug/pragma_linker.dll");
 	if (!hLib) throw GetLastError();
 
 	// Test for exported variable timestamp
