@@ -7,24 +7,32 @@
 #define LIBAPI __declspec(dllimport)
 #endif
 
-#pragma comment(linker, "/EXPORT:sum=<paste mangled name from dll's dumpbin>")
-#pragma comment(linker, "/EXPORT:whoami=<paste mangled name from dll's dumpbin>")
-#pragma comment(linker, "/EXPORT:timestamp=<paste mangled name from dll's dumpbin>")
-#pragma comment(linker, "/EXPORT:object=<paste mangled name from dll's dumpbin>")
+#pragma comment(linker, "/EXPORT:sum=?sum@@YAHHH@Z")
+#pragma comment(linker, "/EXPORT:whoami=?whoami@@YAPADXZ")
+#pragma comment(linker, "/EXPORT:timestamp=?timestamp@@3HA")
+#pragma comment(linker, "/EXPORT:object=?object@@3PAVMyObject@@A")
+#pragma comment(linker, "/EXPORT:createObject=?createObject@@YAPAVIMyObject@@AAPBD@Z")
+class IMyObject {
+public:
+	virtual char* getName() = 0;
+	virtual void setName(const char*&) = 0;
+	//virtual ~IMyObject() = 0;
+};
 
-class LIBAPI MyObject {
+class MyObject : public IMyObject {
 private:
 	char* name;
 public:
-	MyObject(const char&);
+	MyObject(const char*&);
 	char* getName();
-	void setName(char*);
+	void setName(const char*&);
 	~MyObject();
 };
+LIBAPI IMyObject* createObject(const char*& s);
 
 LIBAPI int sum(int a, int b);
-LIBAPI const char& whoami(void);
-LIBAPI time_t timestamp;
+LIBAPI char* whoami(void);
+LIBAPI int timestamp;
 LIBAPI MyObject* object;
 
 #endif
