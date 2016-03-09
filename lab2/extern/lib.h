@@ -9,19 +9,27 @@
 
 extern "C"
 {
-	class LIBAPI MyObject {
+	class IMyObject {
+	public:
+		virtual char* getName() = 0;
+		virtual void setName(const char*&) = 0;
+		//virtual ~IMyObject() = 0;
+	};
+
+	class MyObject : public IMyObject {
 	private:
 		char* name;
 	public:
-		MyObject(const char&);
+		MyObject(const char*&);
 		char* getName();
-		void setName(char*);
+		void setName(const char*&);
 		~MyObject();
 	};
 
+	LIBAPI IMyObject* createObject(const char*& s);
 	LIBAPI int sum(int a, int b);
-	LIBAPI const char& whoami(void);
-	LIBAPI time_t timestamp;
+	LIBAPI const char* whoami();
+	LIBAPI int timestamp;
 	LIBAPI MyObject* object;
 }
 
