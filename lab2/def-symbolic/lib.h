@@ -1,25 +1,27 @@
 #ifndef LIBBSU
 #define LIBBSU
 
-#ifdef LIB_EXPORT
-#define LIBAPI __declspec(dllexport)
-#else
-#define LIBAPI __declspec(dllimport)
-#endif
 
-class LIBAPI MyObject {
+class IMyObject {
+public:
+	virtual char* getName() = 0;
+	virtual void setName(const char*&) = 0;
+	//virtual ~IMyObject() = 0;
+};
+
+class MyObject : public IMyObject {
 private:
 	char* name;
 public:
-	MyObject(const char&);
+	MyObject(const char*&);
 	char* getName();
-	void setName(char*);
+	void setName(const char*&);
 	~MyObject();
 };
-
-LIBAPI int sum(int a, int b);
-LIBAPI const char& whoami(void);
-LIBAPI time_t timestamp;
-LIBAPI MyObject* object;
+IMyObject* createObject(const char*& s);
+int sum(int a, int b);
+char* whoami(void);
+time_t timestamp = 0;
+MyObject* object = NULL;
 
 #endif
