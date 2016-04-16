@@ -1,0 +1,20 @@
+ lab-3-resource-dll
+
+ Timestamp is 571214eb (Sat Apr 16 13:33:15 2016)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000143H .rdata                  DATA
+ 0001:00000143 00000000H .edata                  DATA
+ 0001:00000144 000001a3H .rdata$debug            DATA
+ 0002:00000000 000001c0H .rsrc$01                DATA
+ 0002:000001c0 00000310H .rsrc$02                DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___guard_fids_count        00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___guard_fids_table        00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___guard_flags             00000000     <absolute>

@@ -1,0 +1,14 @@
+﻿Сборка начата 4/16/2016 4:07:56 PM.
+     1>Проект "C:\Users\Евгений\Desktop\os\lab5\lib\lab5-dll.vcxproj" в узле 2 (целевые объекты Build).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /Zi /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D LAB5DLL_EXPORTS /D _WINDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt lib.cpp
+         lib.cpp
+     1>c:\users\евгений\desktop\os\lab5\lib\lib.h(3): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sharedStringPtr"
+     1>c:\users\евгений\desktop\os\lab5\lib\lib.h(3): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+     1>lib.cpp(5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sharedString"
+     1>lib.cpp(5): error C4430: отсутствует спецификатор типа - предполагается int. Примечание. C++ не поддерживает int по умолчанию
+     1>Сборка проекта "C:\Users\Евгений\Desktop\os\lab5\lib\lab5-dll.vcxproj" завершена (целевые объекты Build) с ошибкой.
+
+Ошибка сборки.
+
+Затраченное время: 00:00:00.56

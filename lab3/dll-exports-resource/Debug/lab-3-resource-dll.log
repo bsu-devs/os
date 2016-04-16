@@ -1,0 +1,11 @@
+﻿Сборка начата 4/16/2016 1:33:15 PM.
+     1>Проект "C:\Users\Евгений\Desktop\os\lab3\dll-exports-resource\lab-3-resource-dll.vcxproj" в узле 2 (целевые объекты Build).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Евгений\Desktop\os\lab3\dll-exports-resource\Debug\lab-3-resource-dll.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Евгений\Desktop\os\lab3\dll-exports-resource\Debug\lab-3-resource-dll.pdb" /MAP /SUBSYSTEM:WINDOWS /TLBID:1 /NOENTRY /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Евгений\Desktop\os\lab3\dll-exports-resource\Debug\lab-3-resource-dll.lib" /MACHINE:X86 /DLL Debug\lib.res
+         Debug\lib.obj
+         lab-3-resource-dll.vcxproj -> C:\Users\Евгений\Desktop\os\lab3\dll-exports-resource\Debug\lab-3-resource-dll.dll
+     1>Сборка проекта "C:\Users\Евгений\Desktop\os\lab3\dll-exports-resource\lab-3-resource-dll.vcxproj" завершена (целевые объекты Build).
+
+Сборка успешно завершена.
+
+Затраченное время: 00:00:00.24
