@@ -6,8 +6,6 @@
 using namespace std;
 
 int main () {
-	wstring wstr;
-	wcin >> sharedString;
-	// wcsncpy_s(sharedStringPtr, 100, wstr.c_str(), 100);
+	cin >> str;
 	PostMessage(HWND_BROADCAST, WM_COMMAND, (WPARAM)123, (LPARAM)456);
 }

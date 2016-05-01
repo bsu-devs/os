@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab5-receiver", "lab5-receiver.vcxproj", "{3ABE0343-A291-4BE8-9EB7-1D5C83CAA656}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "lab5-receiver", "lab5-receiver.vcxproj", "{FA3D1D15-EDA6-40E4-97E2-BFE07332F33D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Win32 = Release|Win32
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3ABE0343-A291-4BE8-9EB7-1D5C83CAA656}.Debug|Win32.ActiveCfg = Debug|Win32
-		{3ABE0343-A291-4BE8-9EB7-1D5C83CAA656}.Debug|Win32.Build.0 = Debug|Win32
-		{3ABE0343-A291-4BE8-9EB7-1D5C83CAA656}.Release|Win32.ActiveCfg = Release|Win32
-		{3ABE0343-A291-4BE8-9EB7-1D5C83CAA656}.Release|Win32.Build.0 = Release|Win32
+		{FA3D1D15-EDA6-40E4-97E2-BFE07332F33D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FA3D1D15-EDA6-40E4-97E2-BFE07332F33D}.Debug|Win32.Build.0 = Debug|Win32
+		{FA3D1D15-EDA6-40E4-97E2-BFE07332F33D}.Release|Win32.ActiveCfg = Release|Win32
+		{FA3D1D15-EDA6-40E4-97E2-BFE07332F33D}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

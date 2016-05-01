@@ -45,11 +45,11 @@ LRESULT CALLBACK WindowProc(HWND hw, UINT msg, WPARAM wp, LPARAM lp) {
 				0, 0, 300, 100, hw, (HMENU)ID_LABEL, NULL, NULL);
 			return 0;
 		case WM_COMMAND:
-			if (wp == 123 && lp == 456) SetWindowText(label, (LPCSTR)sharedString.c_str());
+			if (wp == 123 && lp == 456) SetWindowTextA(label, (LPCSTR)str);
 			break;
 		case WM_DESTROY:
 			PostQuitMessage(0);
 			return 0;
 	}
 	return DefWindowProc(hw, msg, wp, lp);
-}
+} 
